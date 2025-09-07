@@ -148,7 +148,7 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="940,3263.5" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="940,2796" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="index">
         <sap:WorkflowViewStateService.ViewState>
@@ -164,7 +164,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="574,3240.5" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="548,2773" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:String[]" Name="Filepath" />
         <Variable x:TypeArguments="sd2:DataTable" Name="dt_invoice" />
@@ -174,7 +174,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign sap:VirtualizedContainerService.HintSize="540,115.5" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign sap:VirtualizedContainerService.HintSize="514,115.5" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="s:String[]">[Filepath]</OutArgument>
         </Assign.To>
@@ -182,14 +182,14 @@
           <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("D:\DOCUMENT_UNDERSTANDING\DUProject\DUProject\Du_files")]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:BuildDataTable DataTable="[dt_invoice]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="540,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Invoice_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Billed_x0020_To&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Due_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Amount_x0020_Due_x0020__x0028_INR_x0029_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Date_x0020_of_x0020_Issue&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[index]" DisplayName="For Each currentdirectory" sap:VirtualizedContainerService.HintSize="540,2950" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Filepath]">
+      <ui:BuildDataTable DataTable="[dt_invoice]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="514,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Invoice_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Billed_x0020_To&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Due_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Amount_x0020_Due_x0020__x0028_INR_x0029_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Date_x0020_of_x0020_Issue&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[index]" DisplayName="For Each currentdirectory" sap:VirtualizedContainerService.HintSize="514,2482.5" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Filepath]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="x:String">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:String" Name="currentdirectory" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="538,2827.5" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,2360" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="p7:DocumentTaxonomy" Name="Taxonomy" />
                 <Variable x:TypeArguments="x:String" Name="DocumentText" />
@@ -204,8 +204,8 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <p:LoadTaxonomy DisplayName="Load Taxonomy" sap:VirtualizedContainerService.HintSize="504,139" sap2010:WorkflowViewState.IdRef="LoadTaxonomy_1" Taxonomy="[Taxonomy]" />
-              <p:DigitizeDocument ApplyOcrMigrated="True" ApplyOcrOnPdf="Auto" DegreeOfParallelism="-1" DetectCheckboxes="True" DisplayName="Digitize Document" DocumentObjectModel="[DOM]" DocumentPath="[currentdirectory]" DocumentText="[DocumentText]" ForceApplyOCR="False" sap:VirtualizedContainerService.HintSize="504,336.5" sap2010:WorkflowViewState.IdRef="DigitizeDocument_1">
+              <p:LoadTaxonomy DisplayName="Load Taxonomy" sap:VirtualizedContainerService.HintSize="478,139" sap2010:WorkflowViewState.IdRef="LoadTaxonomy_1" Taxonomy="[Taxonomy]" />
+              <p:DigitizeDocument ApplyOcrMigrated="True" ApplyOcrOnPdf="Auto" DegreeOfParallelism="-1" DetectCheckboxes="True" DisplayName="Digitize Document" DocumentObjectModel="[DOM]" DocumentPath="[currentdirectory]" DocumentText="[DocumentText]" ForceApplyOCR="False" sap:VirtualizedContainerService.HintSize="478,336.5" sap2010:WorkflowViewState.IdRef="DigitizeDocument_1">
                 <p:DigitizeDocument.OCREngine>
                   <ActivityFunc x:TypeArguments="sd:Image, x:String, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                     <ActivityFunc.Argument1>
@@ -218,7 +218,7 @@
                   </ActivityFunc>
                 </p:DigitizeDocument.OCREngine>
               </p:DigitizeDocument>
-              <p1:ClassifyDocumentScope ClassificationResults="[Classfyrslt]" DisplayName="Classify Document Scope" DocumentObjectModel="[DOM]" DocumentPath="[currentdirectory]" DocumentText="[DocumentText]" sap:VirtualizedContainerService.HintSize="504,478.5" sap2010:WorkflowViewState.IdRef="ClassifyDocumentScope_1" Taxonomy="[Taxonomy]" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UI251859cb16204a359593e216f0889361&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;UVHUB.Accounts.Invoice&quot;:{&quot;OriginalDocumentTypeId&quot;:&quot;UVHUB.Accounts.Invoice&quot;,&quot;ClassifierDocumentTypeId&quot;:null,&quot;IsDocumentTypeIdMapped&quot;:true}}}},&quot;ClassifierMinimumConfidence&quot;:{&quot;UI251859cb16204a359593e216f0889361&quot;:&quot;0&quot;},&quot;DocumentTypesByPersistenceId&quot;:{&quot;UI251859cb16204a359593e216f0889361&quot;:[]}}">
+              <p1:ClassifyDocumentScope ClassificationResults="[Classfyrslt]" DisplayName="Classify Document Scope" DocumentObjectModel="[DOM]" DocumentPath="[currentdirectory]" DocumentText="[DocumentText]" sap:VirtualizedContainerService.HintSize="478,478.5" sap2010:WorkflowViewState.IdRef="ClassifyDocumentScope_1" Taxonomy="[Taxonomy]" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UI251859cb16204a359593e216f0889361&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;UVHUB.Accounts.Invoice&quot;:{&quot;OriginalDocumentTypeId&quot;:&quot;UVHUB.Accounts.Invoice&quot;,&quot;ClassifierDocumentTypeId&quot;:null,&quot;IsDocumentTypeIdMapped&quot;:true}}}},&quot;ClassifierMinimumConfidence&quot;:{&quot;UI251859cb16204a359593e216f0889361&quot;:&quot;0&quot;},&quot;DocumentTypesByPersistenceId&quot;:{&quot;UI251859cb16204a359593e216f0889361&quot;:[]}}">
                 <p1:ClassifyDocumentScope.Classifiers>
                   <p1:KeywordBasedClassifier HumanValidatedData="{x:Null}" LearningData="{x:Null}" DisplayName="Keyword Based Classifier" sap:VirtualizedContainerService.HintSize="382,115.5" sap2010:WorkflowViewState.IdRef="KeywordBasedClassifier_1" LearningFilePath="DocumentProcessing\Keyword.json" PersistenceId="UI251859cb16204a359593e216f0889361">
                     <p1:KeywordBasedClassifier.ClassifierResult>
@@ -266,7 +266,7 @@
                   </p1:KeywordBasedClassifier>
                 </p1:ClassifyDocumentScope.Classifiers>
               </p1:ClassifyDocumentScope>
-              <p4:DataExtractionScope DocumentTypeId="{x:Null}" RuntimeAssetPath="{x:Null}" RuntimeTenantUrl="{x:Null}" ApplyGenerativeValidation="False" ClassificationResult="[Classfyrslt(0)]" DisplayName="Data Extraction Scope" DocumentObjectModel="[DOM]" DocumentPath="[currentdirectory]" DocumentText="[DocumentText]" ExtractionResult="[Extraction]" FormatValuesIfPossible="True" GenerativeValidationConfidenceThreshold="99" sap:VirtualizedContainerService.HintSize="504,528" sap2010:WorkflowViewState.IdRef="DataExtractionScope_1" Taxonomy="[Taxonomy]" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UI3d97f87de3ab4a23af75eb17c258a67a&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;UVHUB.Accounts.Invoice&quot;:{&quot;FieldMappings&quot;:{&quot;UVHUB.Accounts.Invoice.InvoiceNumber&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;UVHUB.Accounts.Invoice.InvoiceNumber&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;UVHUB.Accounts.Invoice.BilledTo&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;UVHUB.Accounts.Invoice.BilledTo&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;UVHUB.Accounts.Invoice.DueDate&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;UVHUB.Accounts.Invoice.DueDate&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;UVHUB.Accounts.Invoice.AmountDue(INR)&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;UVHUB.Accounts.Invoice.AmountDue(INR)&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;UVHUB.Accounts.Invoice.DateofIssue&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;UVHUB.Accounts.Invoice.DateofIssue&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true}},&quot;ExtractorDocumentTypeId&quot;:null}}}},&quot;ExtractorMinimumConfidence&quot;:{&quot;UI3d97f87de3ab4a23af75eb17c258a67a&quot;:&quot;0&quot;},&quot;ExtractorsAliases&quot;:{},&quot;DocumentTypeOptionsByExtractor&quot;:{&quot;UI3d97f87de3ab4a23af75eb17c258a67a&quot;:[]}}">
+              <p4:DataExtractionScope DocumentTypeId="{x:Null}" RuntimeAssetPath="{x:Null}" RuntimeTenantUrl="{x:Null}" ApplyGenerativeValidation="False" ClassificationResult="[Classfyrslt(0)]" DisplayName="Data Extraction Scope" DocumentObjectModel="[DOM]" DocumentPath="[currentdirectory]" DocumentText="[DocumentText]" ExtractionResult="[Extraction]" FormatValuesIfPossible="True" GenerativeValidationConfidenceThreshold="99" sap:VirtualizedContainerService.HintSize="478,528" sap2010:WorkflowViewState.IdRef="DataExtractionScope_1" Taxonomy="[Taxonomy]" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UI3d97f87de3ab4a23af75eb17c258a67a&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;UVHUB.Accounts.Invoice&quot;:{&quot;FieldMappings&quot;:{&quot;UVHUB.Accounts.Invoice.InvoiceNumber&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;UVHUB.Accounts.Invoice.InvoiceNumber&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;UVHUB.Accounts.Invoice.BilledTo&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;UVHUB.Accounts.Invoice.BilledTo&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;UVHUB.Accounts.Invoice.DueDate&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;UVHUB.Accounts.Invoice.DueDate&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;UVHUB.Accounts.Invoice.AmountDue(INR)&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;UVHUB.Accounts.Invoice.AmountDue(INR)&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;UVHUB.Accounts.Invoice.DateofIssue&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;UVHUB.Accounts.Invoice.DateofIssue&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true}},&quot;ExtractorDocumentTypeId&quot;:null}}}},&quot;ExtractorMinimumConfidence&quot;:{&quot;UI3d97f87de3ab4a23af75eb17c258a67a&quot;:&quot;0&quot;},&quot;ExtractorsAliases&quot;:{},&quot;DocumentTypeOptionsByExtractor&quot;:{&quot;UI3d97f87de3ab4a23af75eb17c258a67a&quot;:[]}}">
                 <p4:DataExtractionScope.AvailableAssetPaths>
                   <x:Array Type="x:String">
                     <x:String>kiranchenna18@gmail.com's workspace/Vendor_credentials</x:String>
@@ -332,7 +332,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </p4:DataExtractionScope>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="504,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="478,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                 <ui:CommentOut.Body>
                   <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,461" sap2010:WorkflowViewState.IdRef="Sequence_5">
                     <sap:WorkflowViewStateService.ViewState>
@@ -350,11 +350,9 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-              <p4:ExportExtractionResults DataSet="[Dataset]" DisplayName="Export Extraction Results" ExtractionResult="[Extraction]" sap:VirtualizedContainerService.HintSize="504,212" sap2010:WorkflowViewState.IdRef="ExportExtractionResults_1" IncludeConfidence="False" IncludeOCRConfidence="False" />
-              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="504,123.5" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[Dataset.Tables(0).Rows(0)(0).ToString()]" />
-              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="504,123.5" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="hi bro" />
-              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="504,123.5" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="hi bro" />
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="504,57" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+              <p4:ExportExtractionResults DataSet="[Dataset]" DisplayName="Export Extraction Results" ExtractionResult="[Extraction]" sap:VirtualizedContainerService.HintSize="478,212" sap2010:WorkflowViewState.IdRef="ExportExtractionResults_1" IncludeConfidence="False" IncludeOCRConfidence="False" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="478,123.5" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[Dataset.Tables(0).Rows(0)(0).ToString()]" />
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="478,57" sap2010:WorkflowViewState.IdRef="CommentOut_4">
                 <ui:CommentOut.Body>
                   <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,166.5" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <sap:WorkflowViewStateService.ViewState>
@@ -379,7 +377,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="504,277.5" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="478,57" sap2010:WorkflowViewState.IdRef="CommentOut_5">
                 <ui:CommentOut.Body>
                   <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,166.5" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <sap:WorkflowViewStateService.ViewState>
@@ -397,8 +395,14 @@
                     </Assign>
                   </Sequence>
                 </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-              <Assign sap:VirtualizedContainerService.HintSize="504,115.5" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign sap:VirtualizedContainerService.HintSize="478,115.5" sap2010:WorkflowViewState.IdRef="Assign_5">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Object">[Dataset.Tables(0)(0)(0)]</OutArgument>
                 </Assign.To>
@@ -406,7 +410,7 @@
                   <InArgument x:TypeArguments="x:Object">[Dataset.Tables(0)(0)(0).ToString().Replace(".", "")]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:MergeDataTable Destination="[dt_invoice]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="504,57" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="Add" Source="[Dataset.Tables(0)]">
+              <ui:MergeDataTable Destination="[dt_invoice]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="478,57" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="Add" Source="[Dataset.Tables(0)]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -414,7 +418,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:MergeDataTable>
-              <ui:WriteRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_invoice]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="504,139" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="InvoiceData" WorkbookPath="D:\DOCUMENT_UNDERSTANDING\DUProject\DUProject\Output_Invoices\Invoice.xlsx">
+              <ui:WriteRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_invoice]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="478,139" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="InvoiceData" WorkbookPath="D:\DOCUMENT_UNDERSTANDING\DUProject\DUProject\Output_Invoices\Invoice.xlsx">
                 <ui:WriteRange.StartingCell>
                   <InArgument x:TypeArguments="x:String">
                     <Literal x:TypeArguments="x:String" Value="" />
