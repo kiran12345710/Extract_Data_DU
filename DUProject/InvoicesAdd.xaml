@@ -60,6 +60,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="450,123.5" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="chenna" />
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="450,114.5" sap2010:WorkflowViewState.IdRef="WriteLine_2" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="450,123.5" sap2010:WorkflowViewState.IdRef="WriteLine_2" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="450,114.5" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="chenna" />
   </Sequence>
 </Activity>
